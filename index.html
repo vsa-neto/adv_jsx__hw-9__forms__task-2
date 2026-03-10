@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('trainingForm');
+        const tableBody = document.getElementById('tableBody');
+
+        tableBody.addEventListener('click', function (e) {
+            if (e.target.classList.contains('delete-btn')) {
+                alert('Не реализовано');
+            }
+
+            if (e.target.classList.contains('edit-btn')) {
+                alert('Не реализовано');
+            }
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Не реализовано');
+        });
+    });
+</script>
+
+  </body>
+</html>
