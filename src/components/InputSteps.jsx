@@ -8,7 +8,7 @@ const InputSteps = ({ onSubmit, form, onChange, focusDistance }) => {
                     <div class="form-group">
                         <label HtmlFor="date">Дата (ДД.ММ.ГГ)</label>
                         <input
-                            type="text"
+                            type="date"
                             id="date"
                             value={form.date}
                             onChange={onChange}
