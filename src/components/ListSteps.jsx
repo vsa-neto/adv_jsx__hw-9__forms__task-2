@@ -13,7 +13,7 @@ const ListSteps = ({ items, onDelete, onReduction }) => {
                 {
                     items.map((item) => (
                         <div id={item.date} className="table-row" data-date="2019-07-19" >
-                            <div className="col-date">{item.date}</div>
+                            <div className="col-date">{new Date(item.date).toLocaleDateString('ru-RU')}</div>
                             <div className="col-distance">{item.distance}</div>
                             <div className="col-actions">
                                 <button className="action-btn edit-btn" onClick={() => onReduction((item.date))} title="Редактировать">✎</button>

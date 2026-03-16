@@ -31,13 +31,9 @@ const RenderSteps = () => {
             }
             // Сортировка
             sortItems.sort((a, b) => {
-                // Преобразования "ДД.ММ.ГГГГ" в формат Date
-                const parseDate = (dateStr) => {
-                    const [day, month, year] = dateStr.split('.');
-                    return new Date(`${year}-${month}-${day}`);
-                };
-                return parseDate(b.date) - parseDate(a.date);
+                return new Date(b.date).getTime() - new Date(a.date).getTime();
             });
+       
             return sortItems;
         })
     }
